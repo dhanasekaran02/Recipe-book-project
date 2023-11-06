@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bitter&family=Caveat:wght@500&family=Chivo:wght@300&family=Dancing+Script:wght@500&family=Great+Vibes&family=Josefin+Sans:wght@300&family=Kalam:wght@300&family=Quicksand&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --page-head:'Great Vibes', 'cursive';
+    --page-topic:'Vollkorn', serif;
+    --all-headings:'Fira Sans Condensed', sans-serif;
+
+}
+body{
+    width:100vw;
+    height:100vh;
+    background-image: url(../images/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+header{
+    width:50%;
+    height:100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header>h2{
+    position: relative;
+    margin-left: 2em;
+    margin-right: auto;
+    color:#f9f071;
+    font-size:50px;
+    font-family: var(--page-head);
+    padding-top:30px;
+}
+
+header>ul{
+    margin-left:30px;
+}
+header>ul>li>a{
+    text-decoration:none;
+    color:white;
+    font-family: var(--all-headings);
+}
+header>ul>li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right:2em;
+    margin-top:30px;
+    letter-spacing:2px;
+    padding: 10px 14px;
+    transition:all 0.3s ease-in-out;
+    font-size:20px;
+}
+header>ul>li>a:hover{
+    color:orangered;
+}
+header>ul>li:hover{
+    transform: scale(1.1);
+}
+.intro_heading{
+    position:absolute;
+    color:rgb(240, 237, 237);
+    left:15%;
+    top:30%;
+    font-family: var(--page-topic);
+    font-size: 22px;
+    letter-spacing: 5px;
+    width:50%;
+}
+.about::before{
+    content: '';
+    position: absolute;
+    border:2px solid #f9f071;
+    top:52px;
+    width:28%;
+}
+.intro_heading>p{
+    margin-top:20px;
+    font-size:20px;
+    letter-spacing:2px;
+    color:white;
+    width:90%;
+    text-align: justify;
+}

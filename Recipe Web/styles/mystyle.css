@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bitter&family=Caveat:wght@500&family=Chivo:wght@300&family=Dancing+Script:wght@500&family=Great+Vibes&family=Josefin+Sans:wght@300&family=Kalam:wght@300&family=Quicksand&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --page-head:'Great Vibes', 'cursive';
+    --page-topic:'Vollkorn', serif;
+
+}
+body{
+    width:100vw;
+    height:100vh;
+    background-image: url(../images/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+header{
+    width:100%;
+    height:250px;
+}
+header>h2{
+    margin-left: 2em;
+    margin-right: auto;
+    color:#f9f071;
+    font-size:50px;
+    font-family: var(--page-head);
+    padding-top:30px;
+}
+.intro_heading{
+    position:absolute;
+    color:rgb(240, 237, 237);
+    left:15%;
+    top:32%;
+    font-family: var(--page-topic);
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.intro_heading>p{
+    font-size:20px;
+    letter-spacing:2px;
+    color:#F9F871;
+}
+.intro_heading>ul>li>a{
+    text-decoration:none;
+    color:white;
+}
+.intro_heading>ul>li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right:2em;
+    margin-top:30px;
+    letter-spacing:2px;
+    padding: 10px 14px;
+    border:2px solid grey;
+    border-radius:20px;
+    background-color: rgba(0,0,0,0.3);
+    transition:all 0.3s ease-in-out;
+}
+.intro_heading>ul>li>a:hover{
+    color:orangered;
+}
+.intro_heading>ul>li:hover{
+    transform: scale(1.1);
+    border:2px solid rgb(250, 110, 59);
+}
